@@ -188,6 +188,7 @@ function home() {
   app.innerHTML = `
     <h1>Охрана труда: руководители и специалисты</h1>
     <div class="muted">Строительные организации · ${data.chapters.length} глав · ${t.total} вопросов</div>
+    <p style="margin:10px 0 0"><a class="notes" href="notes.html">Конспект: ошибки и непройденные вопросы с ответами →</a></p>
     <div class="card total">
       <div class="nums"><span><b>${t.done}</b> из ${t.total} пройдено (${Math.round(t.done / t.total * 100)}%)</span>
       <span class="muted">верно ${t.ok} · с ошибкой ${t.bad} · осталось ${t.total - t.done}</span></div>
